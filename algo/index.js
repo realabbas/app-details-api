@@ -18,7 +18,6 @@ while (index < 7) {
   preview_images.push(image_data.children[index].children[0].src);
   index = index + 1;
 }
-
 const description = document.getElementsByClassName("DWPxHb")[0].innerText;
 
 const ratings = document.getElementsByClassName("BHMmbe")[0].ariaLabel;
