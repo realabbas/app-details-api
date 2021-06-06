@@ -68,7 +68,7 @@ module.exports = (id) =>
       }
 
       const latest_update_description =
-        document.getElementsByClassName("DWPxHb")[1].textContent;
+        document.getElementsByClassName("DWPxHb")[1]?document.getElementsByClassName("DWPxHb")[1].textContent:"N/A";
 
       let full_meta_data =
         document.getElementsByClassName("IxB2fe")[0].children;
