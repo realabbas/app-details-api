@@ -12,7 +12,7 @@ module.exports = (id) =>
       const dom = new JSDOM(`${response.data}`);
       document = dom.window.document;
 
-      const app_url = `https://play.google.com/store/apps/details?id=${id}`
+      const app_url = `https://play.google.com/store/apps/details?id=${id}`;
       const logo = document.getElementsByClassName("T75of sHb2Xb")[0].src;
       const app_name = document.getElementsByClassName("AHFaub")[0].textContent;
       const publisher_name =
@@ -41,9 +41,13 @@ module.exports = (id) =>
       }
 
       const youtube_trailer = document.getElementsByClassName("MMZjL lgooh")[0]
-        ? `https://www.youtube.com/watch?v=${new URL( document
-          .getElementsByClassName("MMZjL lgooh")[0]
-          .getAttribute("data-trailer-url")).pathname.split('/')[2]}`
+        ? `https://www.youtube.com/watch?v=${
+            new URL(
+              document
+                .getElementsByClassName("MMZjL lgooh")[0]
+                .getAttribute("data-trailer-url")
+            ).pathname.split("/")[2]
+          }`
         : "N/A";
 
       const description =
