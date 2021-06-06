@@ -12,9 +12,9 @@
 
 #### API Endpoints
 
-| Method |  Endpoint                  | Params  | Details |
-|-------------------------------------|---------|---------|
-| GET    |   /v1/details/:id          | id      | App Id  |
+| Method | Endpoint        | Params | Details |
+|--------|-----------------|--------|---------|
+| GET    | /v1/details/:id | id     | App ID  |
 
 #### Response Schema
 
